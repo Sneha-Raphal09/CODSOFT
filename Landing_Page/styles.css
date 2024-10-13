@@ -1,0 +1,438 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-image: url(pictures/purple\ bck.jpg);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
+    color: white;                  
+    
+}
+
+/* Header Styles */
+header {
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section Styles */
+.main{
+    
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Adjust the height to fit your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: 80px; /* Add margin equal to the header height */
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for readability */
+    z-index: -1;
+}
+
+.main-content h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About Section Styling */
+#about {
+    
+    padding: 100px 50px; /* Add padding to the sides and top/bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 30px; /* Space between text and image */
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 350px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+
+/* Skills Section Styling */
+#skills {
+    padding: 100px 50px; /* Add padding to the sides and top/bottom */
+    text-align: center;
+}
+
+#skills h2 {
+    margin-bottom: 22px;
+    font-size: 36px;
+}
+
+#skills ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 20px 0; /* Margin for spacing */
+    padding: 0; /* Remove padding */
+}
+
+#skills li {
+    font-size: 22px;
+    margin: 10px 0; /* Space between list items */
+}
+
+/* Collage Styling */
+.skills-collage {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center images */
+    margin-top: 30px; /* Space above the collage */
+}
+
+.skills-collage img {
+    width: 100px; /* Set a fixed width for each image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between images */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow effect */
+}
+
+
+/* Projects Section Styling */
+#projects {
+    padding: 100px 50px; /* Add padding to the sides and top/bottom */
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Project Background Images */
+.project:nth-child(1) {
+    background-image: url(pictures/abstract-tenderness-blue-light-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project:nth-child(2) {
+    background-image: url(pictures/abstract-tenderness-blue-light-wallpaper.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.project:nth-child(3) {
+    background-image: url(pictures/abstract-tenderness-blue-light-wallpaper.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.project:nth-child(4) {
+    background-image: url(pictures/abstract-tenderness-blue-light-wallpaper.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.project h3 {
+    margin: 10px 0;
+    color: #000000; /* Dark text color */
+    font-weight: bolder;
+}
+
+.project p {
+    color: #000000; /* Slightly lighter text color */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Education Section Styling */
+#education {
+    padding: 100px 50px;
+    background: url('path-to-background-image.jpg') no-repeat center center;
+    background-size: cover; 
+    text-align: center;
+    color: white; 
+    border-radius: 10px;
+}
+
+#education h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.degree {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+.degree .university {
+    font-weight: bold;
+}
+
+.coursework h4 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.coursework ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coursework li {
+    background-color: rgba(49, 14, 72, 0.1); 
+    border: 1px solid #575353;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(49, 14, 72, 0.1);
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+/* Contact Section Styling */
+#contact {
+    padding: 100px 50px;
+    text-align: center;
+    
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 20px;
+    color: #f2f2f2;
+    margin-bottom: 40px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-info p strong {
+    margin-right: 10px;
+}
+
+.contact-info p a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+/* Add icons next to the text */
+.contact-info p::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Icon for Email */
+.contact-info p:nth-child(1)::before {
+    background-image: url(pictures/4672500.png);  
+}
+/* Icon for LinkedIn */
+.contact-info p:nth-child(2)::before {
+    background-image: url(pictures/LinkedIn_logo_initials.png); 
+}
+
+/* Icon for GitHub */
+.contact-info p:nth-child(3)::before {
+    background-image: url(pictures/github-logo-git-hub-icon-on-white-background-free-vector.jpg);  
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content h1 {
+        font-size: 32px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+    #about {
+        flex-direction: column; 
+        padding: 50px 20px; 
+    }
+
+    .about-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        max-width: 200px; 
+        margin: 0 auto;
+    }
+    #skills {
+        padding: 50px 20px; 
+    }
+
+    .skills-collage img {
+        width: 100px;
+    }
+    #projects {
+        padding: 50px 20px; 
+    }
+
+    .project {
+        margin: 15px 0; 
+    }
+    #education {
+        padding: 50px 20px;
+    }
+}
